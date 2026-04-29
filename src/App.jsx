@@ -5,8 +5,7 @@ function App() {
         <section>
           <h1>Maria Lappa</h1>
           <p>
-            I build clean, user-friendly interfaces and care about the small
-            details that make things feel right.
+            Front-end Developer
           </p>
         </section>
 
