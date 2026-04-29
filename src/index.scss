@@ -52,7 +52,7 @@ button {
 
 .badge {
   background-color: var(--accent);
-  opacity: 0.8;
+  opacity: 0.5;
   border-radius: 999px;
   border-color: #08060d;
   font-size: 0.8rem;
@@ -69,4 +69,10 @@ button {
 .badge:hover {
   border-color: var(--accent);
   color: var(--text-heading);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }

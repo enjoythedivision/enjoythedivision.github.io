@@ -39,7 +39,7 @@ export default function Experience() {
           <h3>Freelance Developer</h3>
           <span className="date">January 2024 - Present</span>
           <p>
-            Designed, built and deployed websites, WordPress projects, and
+            Designed, built and deployed websites and WordPress projects, as well as
             custom headless CMS integrations for clients.
           </p>
           <span className="badges">
