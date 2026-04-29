@@ -6,6 +6,7 @@ export default function Interests() {
       <h2>Other Interests</h2>
 
       <ul>
+        <li>serpAPI</li>
         <li>Unreal Engine</li>
         <li>Framer Motion, GSAP</li>
         <li>UI/UX & Typography</li>
