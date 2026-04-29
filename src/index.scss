@@ -26,9 +26,13 @@ body {
   color: var(--text);
   line-height: 1.5;
   min-height: 100vh;
+  letter-spacing: -0.025rem;
 }
 
 .container {
+  h2 {
+    margin-bottom: 12px;
+  }
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
@@ -74,5 +78,6 @@ button {
 .page {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 48px;
+  margin-top: 2rem;
 }
