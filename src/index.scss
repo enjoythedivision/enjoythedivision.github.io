@@ -16,7 +16,7 @@ html {
   --text-muted: #909090;
   --text-heading: #08060d;
   --border: #efefef;
-  --accent: #a4c120;
+  --accent: #bde40e;
   --font: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
@@ -48,4 +48,25 @@ a {
 button {
   font: inherit;
   cursor: pointer;
+}
+
+.badge {
+  background-color: var(--accent);
+  opacity: 0.8;
+  border-radius: 999px;
+  border-color: #08060d;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.badge:hover {
+  border-color: var(--accent);
+  color: var(--text-heading);
 }

@@ -9,7 +9,7 @@ export default function Hero() {
 
       <p className="description">
         Hi, I am Maria, a front-end developer based in Kavala, Greece.
-        This is a space where you can find info about my web dev journey, with a personal sprinkle :)
+        This is a space where you can find info about me with a personal sprinkle. :)
       </p>
 
       <div className="links">
