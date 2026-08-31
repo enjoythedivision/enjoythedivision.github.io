@@ -41,6 +41,12 @@ export default function Projects() {
           <p>
             A project showcasing practical software development skills and techniques.
           </p>
+          <span className="badges">
+            <span className="badge">React</span>
+            <span className="badge">.NET Core</span>
+            <span className="badge">Web API</span>
+            <span className="badge">SQL Server</span>
+          </span>
         </div>
 
         <div className="job">
