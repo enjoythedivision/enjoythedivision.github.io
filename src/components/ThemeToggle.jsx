@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 import "./ThemeToggle.scss";
 
 export default function ThemeToggle() {
@@ -8,7 +8,7 @@ export default function ThemeToggle() {
 
   return (
     <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-      {theme === "light" ? <FaMoon /> : <FaSun />}
+      {theme === "light" ? <HiOutlineMoon /> : <HiOutlineSun />}
     </button>
   );
 }

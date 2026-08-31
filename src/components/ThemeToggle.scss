@@ -1,21 +1,18 @@
 .theme-toggle {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--text-heading);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
   cursor: pointer;
+  padding: 4px;
 
   &:hover {
-    background-color: rgba(233, 138, 14, 0.1);
     color: var(--accent);
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(20deg);
   }
 
   svg {
@@ -23,6 +20,6 @@
   }
 
   &:active svg {
-    transform: rotate(20deg);
+    transform: rotate(40deg);
   }
 }
