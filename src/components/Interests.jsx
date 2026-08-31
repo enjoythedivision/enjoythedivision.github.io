@@ -3,16 +3,14 @@ import "./Education.scss";
 export default function Interests() {
   return (
     <section className="interests container">
-      <h2>Other Interests</h2>
+      <h2>In my free time</h2>
 
       <ul>
-        <li>serpAPI</li>
-        <li>Unreal Engine</li>
-        <li>Framer Motion, GSAP</li>
-        <li>UI/UX & Typography</li>
-        <li>EdTech</li>
-        <li>Adobe Photoshop & Illustrator</li>
-
+        <li>Creative coding</li>
+        <li>UI/UX and typography</li>
+        <li>Motion and interaction design</li>
+        <li>Game development in Unreal Engine</li>
+        <li>Helping out in online developer communities, including Greek developer spaces</li>
       </ul>
     </section>
   );

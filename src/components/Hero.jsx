@@ -7,11 +7,14 @@ export default function Hero() {
     <section className="hero container">
       <h1>Maria Lappa</h1>
 
-      <p className="subtitle">Front-end Developer</p>
+      <p className="subtitle">Junior Software Developer</p>
 
       <p className="description">
-        Hi, I am Maria, a front-end developer based in Kavala, Greece. This is a
-        space where you can find info about me with a personal sprinkle. :)
+        Hi, I'm Maria, a developer based in Kavala, Greece. I mostly work with React and JavaScript, and I'm currently expanding into full-stack development with C# and ASP.NET Core.
+      </p>
+      
+      <p className="description">
+        This site is a place for my work, background, and a few things I'm currently interested in.
       </p>
 
       <div className="icons">

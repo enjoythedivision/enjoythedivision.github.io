@@ -6,19 +6,19 @@ export default function About() {
       <h2>About</h2>
 
       <p className="description">
-        Hey, I am Maria, a front-end developer working with one of the most popular JS libraries, <span className="accent">React</span>.
+        I've always been drawn to problem solving, especially the kind that involves logic, structure, and figuring out how things work.
       </p>
 
       <p className="description">
-        Since my elementary school years, I found myself deeply enjoying problem solving, from math and physics to logic-based thinking.
+        I studied <span className="accent">Electrical & Computer Engineering at Democritus University of Thrace</span>, where I was introduced to programming, object-oriented development, databases, operating systems, and computer networks. Although I'm no longer actively pursuing the degree, that experience shaped the way I think about software and pushed me further toward computer science.
       </p>
 
       <p className="description">
-        When I got in <span className="accent">Electrical & Computer Engineering</span> school, I was introduced to topics like OOP, web development, databases, operating systems and networks. That's when I happily realized that the pseudocode we were taught in high school was no different from real world algorithmic structures. Despite not actively pursuing my studies in Electrical Engineering anymore, I continue to explore everything CS-related through self-study and hands-on projects.
+        More recently, I've been focusing on practical software development through React projects, freelance work, and collaborative projects. I'm also learning C# and ASP.NET Core as I move toward full-stack development.
       </p>
 
       <p className="description">
-        Recently I've been moving toward a more software-focused direction and gradually exploring <span className="accent">.NET development</span>. In the meantime, you can find me freelancing and contributing to open source projects.
+        Outside of that, I like exploring tools and technologies that sit somewhere between software, design, and interactive experiences.
       </p>
     </section>
   );
