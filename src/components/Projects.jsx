@@ -29,6 +29,9 @@ export default function Projects() {
           <p>
             A client-side course management application built with React and Vite, focused on reusable components, routing, and state-driven UI.
           </p>
+          <a className="project-link" href="https://studyflow-dashboard-client.vercel.app/" target="_blank" rel="noreferrer">
+            [Live Link]
+          </a>
           <span className="badges">
             <span className="badge">React</span>
             <span className="badge">Vite</span>
@@ -57,6 +60,9 @@ export default function Projects() {
           <p>
             The live site has Shop, cart functionality, contact/about sections, YouTube integration, and return/privacy/cookie policies.
           </p>
+          <a className="project-link" href="https://nomadriders.gr/" target="_blank" rel="noreferrer">
+            [Live Link]
+          </a>
           <span className="badges">
             <span className="badge">WordPress</span>
             <span className="badge">WooCommerce</span>
@@ -73,6 +79,9 @@ export default function Projects() {
           <p>
             The site includes accounting, tax, payroll and consulting service sections, external appointment booking, an FAQ area, and a regularly updated blog.
           </p>
+          <a className="project-link" href="https://promousas.gr/" target="_blank" rel="noreferrer">
+            [Live Link]
+          </a>
           <span className="badges">
             <span className="badge">WordPress</span>
             <span className="badge">Responsive Design</span>

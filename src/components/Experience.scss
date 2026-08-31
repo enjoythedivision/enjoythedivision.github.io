@@ -12,3 +12,18 @@ ul {
     flex-direction: column;
     gap: 8px;
 }
+
+.project-link {
+    display: inline-block;
+    margin: 0 0 12px;
+    color: var(--link-color, #2563eb);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.project-link:hover {
+    opacity: 0.8;
+}
