@@ -20,5 +20,9 @@ export default function ScrollProgress() {
     };
   }, []);
 
-  return <div className="scroll-progress" style={{ width: `${progress}%` }} />;
+  return (
+    <div className="scroll-progress-track" aria-hidden="true">
+      <div className="scroll-progress" style={{ width: `${progress}%` }} />
+    </div>
+  );
 }

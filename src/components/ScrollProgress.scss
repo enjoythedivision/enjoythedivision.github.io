@@ -1,9 +1,25 @@
-.scroll-progress {
+.scroll-progress-track {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   height: 3px;
+  z-index: 60;
+  background: rgba(233, 138, 14, 0.14);
+  pointer-events: none;
+}
+
+[data-theme="dark"] .scroll-progress-track {
+  background: rgba(0, 255, 136, 0.12);
+}
+
+.scroll-progress {
+  height: 100%;
   background: var(--accent);
-  z-index: 1000;
   transition: width 0.1s ease-out;
+  box-shadow: 0 0 8px rgba(233, 138, 14, 0.45);
+}
+
+[data-theme="dark"] .scroll-progress {
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.35);
 }
