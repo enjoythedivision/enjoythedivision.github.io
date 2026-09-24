@@ -29,7 +29,7 @@ body { font-family: var(--font); font-size: 15px; line-height: 1.8; letter-spaci
 .page { gap: 96px; margin: 0 0 88px; }
 section[id] { scroll-margin-top: 105px; }
 h1, h2, h3 { letter-spacing: -.055em; line-height: 1.2; }
-.container h2 { font-size: clamp(28px, 3.5vw, 38px); margin-bottom: 28px; }
+.container h2 { font-size: clamp(24px, 2.8vw, 30px); margin-bottom: 28px; }
 h1 span, h2 span, .logo span { color: var(--accent); }
 .header { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--border); }
 .header-inner { height: 84px; }
@@ -39,7 +39,7 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 .nav a:hover, .text-link:hover, .hero-meta a:hover { color: var(--accent); }
 .hero { display: grid; grid-template-columns: 1fr; align-items: center; gap: 55px; padding-top: 90px; padding-bottom: 85px; position: relative; }
 .hero::after { content: ''; position: absolute; bottom: 0; left: 40px; right: 40px; border-bottom: 1px solid var(--border); }
-.hero h1 { font-size: clamp(38px, 4.4vw, 57px); font-weight: 600; line-height: 1.14; margin-bottom: 22px; }
+.hero h1 { font-size: clamp(32px, 3.6vw, 44px); font-weight: 600; line-height: 1.14; margin-bottom: 22px; }
 .hero .subtitle { color: var(--accent); font-size: 15px; font-weight: 500; margin-bottom: 14px; }
 .hero .description { font-size: 14px; max-width: 680px; line-height: 1.9; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 12px 19px; border-radius: 5px; font-size: 12px; font-weight: 500; transition: transform .2s, background .2s; }
@@ -84,7 +84,7 @@ h1 span, h2 span, .logo span { color: var(--accent); }
   .nav { gap: 18px; }
   .nav a { font-size: 11px; }
   .hero { grid-template-columns: 1fr; padding-top: 55px; padding-bottom: 55px; gap: 35px; }
-  .hero h1 { font-size: clamp(36px, 7vw, 54px); }
+  .hero h1 { font-size: clamp(30px, 5.5vw, 40px); }
   .hero::after { left: 24px; right: 24px; }
   .about { padding-right: 24px; }
   .project-grid { gap: 18px; }
