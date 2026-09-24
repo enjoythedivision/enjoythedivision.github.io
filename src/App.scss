@@ -63,6 +63,9 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 .badge:hover { transform: none; box-shadow: none; }
 .project-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text-heading); font-size: 11px; font-weight: 500; letter-spacing: 0; text-decoration: none; margin: 24px 0 0; }
 .project-link:hover { color: var(--accent); }
+.project-actions { display: flex; flex-wrap: wrap; gap: 18px; }
+.project-actions button.project-link { padding: 0; border: 0; background: none; font-family: inherit; line-height: inherit; }
+.project-actions .project-link:disabled { color: var(--text-muted); cursor: not-allowed; }
 .work { gap: 0; }
 .job { position: relative; padding: 28px 0 30px 28px; border-left: 1px solid var(--border); }
 .job::before { content: ''; position: absolute; width: 7px; height: 7px; left: -4px; top: 36px; background: var(--accent); border-radius: 50%; }
