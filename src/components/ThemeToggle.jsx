@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../context/theme-context";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 import "./ThemeToggle.scss";
 

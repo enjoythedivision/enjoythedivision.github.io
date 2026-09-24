@@ -8,18 +8,20 @@ import Interests from "./components/Interests";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import { ThemeProvider } from "./context/ThemeContext";
+import "./App.scss";
 
 function App() {
   return (
     <ThemeProvider>
       <ScrollProgress />
       <Header />
+      <a className="skip-link" href="#about">Skip to content</a>
 
       <main className="page">
         <Hero />
         <About />
-        <Experience />
         <Projects />
+        <Experience />
         <Education />
         <Interests />
       </main>

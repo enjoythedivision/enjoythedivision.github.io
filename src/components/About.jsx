@@ -1,8 +1,9 @@
-import "./About.scss";
+﻿import "./About.scss";
 
 export default function About() {
   return (
-    <section className="about container">
+    <section className="about container" id="about">
+      
       <h2>About</h2>
 
       <p className="description">
@@ -18,8 +19,9 @@ export default function About() {
       </p>
 
       <p className="description">
-        Outside of that, I like exploring tools and technologies that sit somewhere between software, design, and interactive experiences.
+        Outside of that, I like exploring new tools and technologies and I'm always looking for ways to level-up my education and skills.
       </p>
     </section>
   );
 }
+

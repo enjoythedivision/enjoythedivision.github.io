@@ -7,12 +7,17 @@ export default function ScrollProgress() {
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrolled = (window.scrollY / windowHeight) * 100;
+      const scrolled = windowHeight > 0 ? (window.scrollY / windowHeight) * 100 : 0;
       setProgress(scrolled);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   return <div className="scroll-progress" style={{ width: `${progress}%` }} />;

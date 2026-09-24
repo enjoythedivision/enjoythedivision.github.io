@@ -1,95 +1,20 @@
-import "./Experience.scss";
-
+﻿import { FiArrowUpRight } from "react-icons/fi";
+const projects = [
+  { name: "Full Stack Library", description: "A library, from shelf to screen. Authentication, role-based access, and personal book borrowing, built across the full stack.", tags: ["React", "ASP.NET Core", "Entity Framework Core", "ASP.NET Core Identity", "SQLite"] },
+  { name: "StudyFlow", description: "A little more structure for student life. A course management app with reusable components, routing, and a state-driven interface.", tags: ["React", "Vite", "React Router"], href: "https://studyflow-dashboard-client.vercel.app/" },
+  { name: "Eispraxis", description: "Putting software development into practice with a React frontend, .NET Core APIs, and a SQL Server database.", tags: ["React", ".NET Core", "Web API", "SQL Server"] },
+  { name: "Nomad Riders", description: "An online home for a motorcycle brand. Product browsing, a shopping cart, and the essentials that bring a store to life.", tags: ["WordPress", "WooCommerce", "E-commerce"], href: "https://nomadriders.gr/" },
+  { name: "Promousas Accounting", description: "A clear, approachable website for an accounting office, connecting services, appointment booking, FAQs, and a business blog.", tags: ["WordPress", "Responsive Design", "Integrations"], href: "https://promousas.gr/" },
+];
 export default function Projects() {
-  return (
-    <section className="experience container">
-      <h2>Projects</h2>
-
-      <div className="work">
-        <div className="job">
-          <h3>Full Stack Library</h3>
-          <p>
-            A full-stack library application built with React, ASP.NET Core Web API, Entity Framework Core, ASP.NET Core Identity, and SQLite.
-          </p>
-          <p>
-            It includes authentication, role-based authorization, CRUD operations, and user-specific book borrowing and returning.
-          </p>
-          <span className="badges">
-            <span className="badge">React</span>
-            <span className="badge">ASP.NET Core</span>
-            <span className="badge">Entity Framework Core</span>
-            <span className="badge">ASP.NET Core Identity</span>
-            <span className="badge">SQLite</span>
-            <span className="badge">REST APIs</span>
-          </span>
-        </div>
-
-        <div className="job">
-          <h3>StudyFlow</h3>
-          <p>
-            A client-side course management application built with React and Vite, focused on reusable components, routing, and state-driven UI.
-          </p>
-          <a className="project-link" href="https://studyflow-dashboard-client.vercel.app/" target="_blank" rel="noreferrer">
-            [Live Link]
-          </a>
-          <span className="badges">
-            <span className="badge">React</span>
-            <span className="badge">Vite</span>
-            <span className="badge">React Router</span>
-          </span>
-        </div>
-
-        <div className="job">
-          <h3>Eispraxis</h3>
-          <p>
-            A project showcasing practical software development skills and techniques.
-          </p>
-          <span className="badges">
-            <span className="badge">React</span>
-            <span className="badge">.NET Core</span>
-            <span className="badge">Web API</span>
-            <span className="badge">SQL Server</span>
-          </span>
-        </div>
-
-        <div className="job">
-          <h3>Nomad Riders</h3>
-          <p>
-            E-commerce website for a motorcycle-focused brand, including product browsing, shopping cart functionality, contact information, and supporting policy pages.
-          </p>
-          <p>
-            The live site has Shop, cart functionality, contact/about sections, YouTube integration, and return/privacy/cookie policies.
-          </p>
-          <a className="project-link" href="https://nomadriders.gr/" target="_blank" rel="noreferrer">
-            [Live Link]
-          </a>
-          <span className="badges">
-            <span className="badge">WordPress</span>
-            <span className="badge">WooCommerce</span>
-            <span className="badge">Responsive Design</span>
-            <span className="badge">E-commerce</span>
-          </span>
-        </div>
-
-        <div className="job">
-          <h3>Promousas Accounting</h3>
-          <p>
-            Business website for an accounting and consulting office, with service pages, appointment booking, FAQs, blog content, and contact information.
-          </p>
-          <p>
-            The site includes accounting, tax, payroll and consulting service sections, external appointment booking, an FAQ area, and a regularly updated blog.
-          </p>
-          <a className="project-link" href="https://promousas.gr/" target="_blank" rel="noreferrer">
-            [Live Link]
-          </a>
-          <span className="badges">
-            <span className="badge">WordPress</span>
-            <span className="badge">Responsive Design</span>
-            <span className="badge">Content Management</span>
-            <span className="badge">Third-party Integrations</span>
-          </span>
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="projects container" id="projects">
+    <div className="section-heading"><div><h2>Projects</h2></div><a className="text-link" href="https://github.com/enjoythedivision" target="_blank" rel="noreferrer">More on GitHub <FiArrowUpRight /></a></div>
+    <div className="project-grid">{projects.map(({ name, description, tags, href }) =>
+      <article className="project-card" key={name}>
+        <div className="project-body"><h3>{name}</h3><p>{description}</p><div className="badges">{tags.map(tag => <span className="badge" key={tag}>{tag}</span>)}</div>{href && <a className="project-link" href={href} target="_blank" rel="noreferrer">Visit website <FiArrowUpRight /><span className="sr-only">: {name}</span></a>}</div>
+      </article>
+    )}</div>
+  </section>;
 }
+
+

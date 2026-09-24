@@ -1,10 +1,7 @@
-import "./Footer.scss";
-
+﻿import "./Footer.scss";
 export default function Footer() {
-  return (
-    <section className="footer container">
-      <span>Maria Lappa | 2026</span>
-      <span><a href="https://www.youtube.com/watch?v=j8APlgvLV6o" target="_blank">Currently listening to...</a></span>
-    </section>
-  );
+  return <footer className="container site-footer">
+    <div className="footer"><span>© {new Date().getFullYear()} Maria Lappa</span><a href="https://www.youtube.com/watch?v=j8APlgvLV6o" target="_blank" rel="noreferrer">On repeat?</a></div>
+  </footer>;
 }
+
