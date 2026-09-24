@@ -67,8 +67,7 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 .project-actions button.project-link { padding: 0; border: 0; background: none; font-family: inherit; line-height: inherit; }
 .project-actions .project-link:disabled { color: var(--text-muted); cursor: not-allowed; }
 .work { gap: 0; }
-.job { position: relative; padding: 28px 0 30px 28px; border-left: 1px solid var(--border); }
-.job::before { content: ''; position: absolute; width: 7px; height: 7px; left: -4px; top: 36px; background: var(--accent); border-radius: 50%; }
+.job { padding: 28px 0 30px; }
 .job h3 { font-size: 19px; margin-bottom: 7px; }
 .job .date { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; margin-bottom: 15px; }
 .job p { font-size: 14px; max-width: 790px; margin-top: 8px; }
