@@ -37,7 +37,6 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 .nav { gap: 30px; }
 .nav a { font-size: 12px; font-weight: 500; color: var(--text); }
 .nav a:hover, .text-link:hover, .hero-meta a:hover { color: var(--accent); }
-.theme-toggle { border-left: 1px solid var(--border); padding-left: 20px; font-size: 19px; }
 .hero { display: grid; grid-template-columns: 1fr; align-items: center; gap: 55px; padding-top: 90px; padding-bottom: 85px; position: relative; }
 .hero::after { content: ''; position: absolute; bottom: 0; left: 40px; right: 40px; border-bottom: 1px solid var(--border); }
 .hero h1 { font-size: clamp(38px, 4.4vw, 57px); font-weight: 600; line-height: 1.14; margin-bottom: 22px; }
@@ -84,7 +83,6 @@ h1 span, h2 span, .logo span { color: var(--accent); }
   .header-inner { height: 72px; }
   .nav { gap: 18px; }
   .nav a { font-size: 11px; }
-  .theme-toggle { padding-left: 12px; }
   .hero { grid-template-columns: 1fr; padding-top: 55px; padding-bottom: 55px; gap: 35px; }
   .hero h1 { font-size: clamp(36px, 7vw, 54px); }
   .hero::after { left: 24px; right: 24px; }
