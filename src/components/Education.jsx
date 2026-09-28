@@ -2,7 +2,7 @@ import "./Education.scss";
 
 export default function Education() {
   return (
-    <section className="container">
+    <section className="container" id="education">
       <h2>Education</h2>
       <div className="work">
         <div className="job">

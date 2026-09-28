@@ -2,7 +2,7 @@ import "./Education.scss";
 
 export default function Interests() {
   return (
-    <section className="interests container">
+    <section className="interests container" id="interests">
       <h2>In my free time</h2>
 
       <ul>
