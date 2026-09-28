@@ -21,56 +21,68 @@
   height: 60px;
 }
 
-.logo {
+.header .logo {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  flex: 0 0 80px;
+  flex: 0 0 auto;
   height: 44px;
-  font-family: var(--font);
-  font-weight: 600;
-  font-size: 18px;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-weight: 500;
+  font-size: 20px;
   color: var(--text-heading);
-  letter-spacing: 0.5px;
+  letter-spacing: -0.06em;
 
-  .logo-name {
-    position: relative;
+  .logo-path {
     color: inherit;
-    line-height: 1.4;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--accent);
-      offset-path: ellipse(58% 50% at 50% 50%);
-      offset-distance: 8%;
-      offset-rotate: 0deg;
-    }
   }
 
-  &:hover .logo-name::after,
-  &:focus-visible .logo-name::after {
-    animation: logo-dot-orbit 1100ms cubic-bezier(0.45, 0, 0.2, 1);
+  .logo-prefix,
+  .terminal-prompt {
+    color: var(--accent);
   }
-}
 
-@keyframes logo-dot-orbit {
-  from {
-    offset-distance: 8%;
+  .logo-terminal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: grid;
+    gap: 6px;
+    width: max-content;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 8px 24px #00000014;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
   }
-  to {
-    offset-distance: 108%;
+
+  .terminal-command {
+    color: var(--text-heading);
+  }
+
+  .terminal-output {
+    color: var(--text-muted);
+  }
+
+  &:hover .logo-terminal,
+  &:focus-visible .logo-terminal {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logo:hover .logo-name::after,
-  .logo:focus-visible .logo-name::after {
-    animation: none;
+  .header .logo .logo-terminal {
+    transition: none;
   }
 }
 
