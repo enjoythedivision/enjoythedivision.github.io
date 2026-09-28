@@ -12,7 +12,7 @@ export default function Interests() {
         <li>Motion and interaction design</li>
         <li>Literature</li>
         <li>Game development in Unreal Engine</li>
-        <li>Helping out/providing feedback in online developer communities, including Greek developer spaces</li>
+        <li>Helping out/providing feedback in online developer communities</li>
       </ul>
     </section>
   );
