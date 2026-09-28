@@ -34,9 +34,17 @@
   letter-spacing: -0.06em;
 
   .logo-path {
-    min-width: 15ch;
+    min-width: 25ch;
     white-space: nowrap;
     color: inherit;
+  }
+
+  .logo-directory {
+    color: var(--text-muted);
+  }
+
+  .logo-command {
+    color: var(--text-heading);
   }
 
   .logo-prefix,
@@ -82,7 +90,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 760px) {
   .header .header-inner {
     height: auto;
     min-height: 84px;
@@ -93,7 +101,7 @@
   .header .logo {
     width: 100%;
     height: 34px;
-    font-size: 18px;
+    font-size: clamp(16px, 3.4vw, 18px);
   }
 
   .header .nav {

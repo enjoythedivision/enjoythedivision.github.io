@@ -36,12 +36,12 @@ export default function Header() {
   return <header className="header"><div className="container header-inner">
     <a className="logo" href="#home" aria-label="Maria Lappa, home">
       <span className="logo-path" aria-hidden="true">
-        {activeSection === "home"
-          ? <><span className="logo-prefix">~/</span>maria</>
-          : <><span className="logo-prefix">cd</span>{" "}{activeSection}</>}
+        <span className="logo-directory">{"~\\maria"}</span>
+        {" "}<span className="logo-prefix">&gt;</span>
+        {activeSection !== "home" && <span className="logo-command">{` cd ${activeSection}`}</span>}
       </span>
       <span className="logo-terminal" aria-hidden="true">
-        <span className="terminal-command"><span className="terminal-prompt">$</span> whoami</span>
+        <span className="terminal-command"><span className="terminal-prompt">&gt;</span> whoami</span>
         <span className="terminal-output">frontend developer</span>
       </span>
     </a>
