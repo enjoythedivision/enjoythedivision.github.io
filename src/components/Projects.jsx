@@ -1,10 +1,10 @@
 ﻿import { FiArrowUpRight } from "react-icons/fi";
 const projects = [
-  { name: "Full Stack Library", source: "", description: "A library, from shelf to screen. Authentication, role-based access, and personal book borrowing, built across the full stack.", tags: ["React", "ASP.NET Core", "Entity Framework Core", "ASP.NET Core Identity", "SQLite"] },
-  { name: "StudyFlow", source: "", description: "A little more structure for student life. A course management app with reusable components, routing, and a state-driven interface.", tags: ["React", "Vite", "React Router"], href: "https://studyflow-dashboard-client.vercel.app/" },
-  { name: "Eispraxis", source: "", description: "Putting software development into practice with a React frontend, .NET Core APIs, and a SQL Server database.", tags: ["React", ".NET Core", "Web API", "SQL Server"] },
-  { name: "Nomad Riders", description: "An online home for a motorcycle brand. Product browsing, a shopping cart, and the essentials that bring a store to life.", tags: ["WordPress", "WooCommerce", "E-commerce"], href: "https://nomadriders.gr/" },
-  { name: "Promousas Accounting", description: "A clear, approachable website for an accounting office, connecting services, appointment booking, FAQs, and a business blog.", tags: ["WordPress", "Responsive Design", "Integrations"], href: "https://promousas.gr/" },
+  { name: "Full Stack Library", source: "", description: "Full-stack monorepo with a React frontend and ASP.NET Core backend. Uses Entity Framework Core with SQLite for persistence and ASP.NET Core Identity for authentication and role-based access to book borrowing features.", tags: ["React", "ASP.NET Core", "Entity Framework Core", "ASP.NET Core Identity", "SQLite"] },
+  { name: "StudyFlow", source: "", description: "Course management monorepo with a React frontend built using Vite. Organizes the interface around reusable components, React Router navigation, and state-driven views for managing coursework.", tags: ["React", "Vite", "React Router"], href: "https://studyflow-dashboard-client.vercel.app/" },
+  { name: "Eispraxis", source: "", description: "Full-stack application combining a React frontend, .NET Core Web APIs, and SQL Server persistence. Connects the user interface to backend services and a relational database.", tags: ["React", ".NET Core", "Web API", "SQL Server"] },
+  { name: "Nomad Riders", description: "WordPress e-commerce site using WooCommerce for the product catalog and shopping cart. Combines content management with product browsing and cart functionality for a motorcycle brand.", tags: ["WordPress", "WooCommerce", "E-commerce"], href: "https://nomadriders.gr/" },
+  { name: "Promousas Accounting", description: "Responsive WordPress site with appointment booking integration, service pages, FAQs, and a business blog. Uses the CMS to manage service information and publish articles.", tags: ["WordPress", "Responsive Design", "Integrations"], href: "https://promousas.gr/" },
 ];
 export default function Projects() {
   return <section className="projects container" id="projects">
