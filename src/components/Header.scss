@@ -32,44 +32,44 @@
   color: var(--text-heading);
   letter-spacing: 0.5px;
 
-  &:hover,
-  &:focus-visible {
-    color: var(--accent);
-    animation: logo-font-shuffle 700ms steps(1, end) infinite;
+  .logo-name {
+    position: relative;
+    color: inherit;
+    line-height: 1.4;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      offset-path: ellipse(58% 50% at 50% 50%);
+      offset-distance: 8%;
+      offset-rotate: 0deg;
+    }
+  }
+
+  &:hover .logo-name::after,
+  &:focus-visible .logo-name::after {
+    animation: logo-dot-orbit 1100ms cubic-bezier(0.45, 0, 0.2, 1);
   }
 }
 
-@keyframes logo-font-shuffle {
-  0%, 100% {
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 700;
+@keyframes logo-dot-orbit {
+  from {
+    offset-distance: 8%;
   }
-  20% {
-    font-family: "Courier New", monospace;
-    font-style: normal;
-    font-weight: 400;
-  }
-  40% {
-    font-family: Impact, "Arial Narrow", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-  }
-  60% {
-    font-family: "Palatino Linotype", Palatino, serif;
-    font-style: normal;
-    font-weight: 700;
-  }
-  80% {
-    font-family: "Trebuchet MS", sans-serif;
-    font-style: italic;
-    font-weight: 700;
+  to {
+    offset-distance: 108%;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logo:hover,
-  .logo:focus-visible {
+  .logo:hover .logo-name::after,
+  .logo:focus-visible .logo-name::after {
     animation: none;
   }
 }
