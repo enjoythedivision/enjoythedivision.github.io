@@ -22,10 +22,56 @@
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 80px;
+  height: 44px;
+  font-family: var(--font);
   font-weight: 600;
   font-size: 18px;
   color: var(--text-heading);
   letter-spacing: 0.5px;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    animation: logo-font-shuffle 700ms steps(1, end) infinite;
+  }
+}
+
+@keyframes logo-font-shuffle {
+  0%, 100% {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+  20% {
+    font-family: "Courier New", monospace;
+    font-style: normal;
+    font-weight: 400;
+  }
+  40% {
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  60% {
+    font-family: "Palatino Linotype", Palatino, serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+  80% {
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo:hover,
+  .logo:focus-visible {
+    animation: none;
+  }
 }
 
 .nav {
