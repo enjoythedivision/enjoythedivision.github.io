@@ -7,6 +7,7 @@ export default function Interests() {
 
       <ul>
         <li>Creative coding</li>
+        <li>Exploring .NET</li>
         <li>UI/UX and typography</li>
         <li>Motion and interaction design</li>
         <li>Literature</li>
