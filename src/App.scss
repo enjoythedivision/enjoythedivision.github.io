@@ -71,8 +71,6 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 .job h3 { font-size: 19px; margin-bottom: 7px; }
 .job .date { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; margin-bottom: 15px; }
 .job p { font-size: 14px; max-width: 790px; margin-top: 8px; }
-.interests ul { display: flex; flex-wrap: wrap; gap: 10px; }
-.interests li { border: 1px solid var(--border); border-radius: 30px; padding: 8px 17px; font-size: 12px; }
 .footer { padding: 28px 0; margin-top: 40px; gap: 16px; font-size: 10px; flex-wrap: wrap; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 ::selection { background: #d88c4f40; }
@@ -108,4 +106,3 @@ h1 span, h2 span, .logo span { color: var(--accent); }
 
 .hero-meta .cv-button { display: inline-flex; align-items: center; gap: 7px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; letter-spacing: inherit; }
 .cv-button:disabled { cursor: not-allowed; }
-
