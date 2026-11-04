@@ -8,7 +8,7 @@ export default function Volunteering() {
 
       <div className="work">
         <div className="job">
-          <h3>Frontend Lead (Volunteer) | FlameVerse AI</h3>
+          <h3>Frontend Coordinator (Volunteer) | FlameVerse AI</h3>
           <span className="date">June 2025 - Present</span>
           <p>
             I contribute to the frontend codebase while coordinating tasks across a volunteer frontend team. My work includes optimizing & reviewing code, integrating REST APIs, and collaborating with backend developers and product contributors.

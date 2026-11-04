@@ -2,7 +2,9 @@
 const projects = [
   {
     name: "Full Stack Library",
-    source: "",
+    sources: [
+      { label: "Source", href: "https://github.com/enjoythedivision/library-fullstack" },
+    ],
     description:
       "Full-stack monorepo with a React frontend and ASP.NET Core backend. Uses Entity Framework Core with SQLite for persistence and ASP.NET Core Identity for authentication and role-based access to book borrowing features.",
     tags: [
@@ -15,7 +17,9 @@ const projects = [
   },
   {
     name: "StudyFlow",
-    source: "",
+    sources: [
+      { label: "Source", href: "https://github.com/enjoythedivision/studyflow-dashboard" },
+    ],
     description:
       "Course management monorepo with a React frontend built using Vite. Organizes the interface around reusable components, React Router navigation, and state-driven views for managing coursework.",
     tags: ["React", "Vite", "React Router"],
@@ -23,7 +27,7 @@ const projects = [
   },
   {
     name: "Eispraxis",
-    source: "",
+    status: "Work in progress",
     description:
       "Full-stack application combining a React frontend, .NET Core Web APIs, and SQL Server persistence. Connects the user interface to backend services and a relational database.",
     tags: ["React", ".NET Core", "Web API", "SQL Server"],
@@ -47,6 +51,10 @@ const projects = [
     description: "E-commerce application with a React frontend and .NET backend.",
     tags: ["React", ".NET", "E-commerce"],
     href: "https://e-shop-client-six.vercel.app/",
+    sources: [
+      { label: "Frontend source", href: "https://github.com/enjoythedivision/EShopClient" },
+      { label: "Backend source", href: "https://github.com/enjoythedivision/EShopAPI" },
+    ],
   },
 ];
 export default function Projects() {
@@ -67,7 +75,7 @@ export default function Projects() {
       </div>
       <div className="project-grid">
         {projects.map(
-          ({ name, description, tags, href, source, placeholder }) => (
+          ({ name, description, tags, href, sources, status }) => (
             <article className="project-card" key={name}>
               <div className="project-body">
                 <h3>{name}</h3>
@@ -80,58 +88,35 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="project-actions">
-                  {placeholder ? (
+                  {status && (
                     <span className="project-link project-status">
-                      Coming soon
+                      {status}
                     </span>
-                  ) : (
-                    <>
-                      {href ? (
-                        <a
-                          className="project-link"
-                          href={href}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {source !== undefined
-                            ? "Live website"
-                            : "Visit website"}{" "}
-                          <FiArrowUpRight />
-                          <span className="sr-only">: {name}</span>
-                        </a>
-                      ) : (
-                        <button className="project-link" type="button" disabled>
-                          Live website <FiArrowUpRight />
-                          <span className="sr-only">
-                            : {name} (unavailable)
-                          </span>
-                        </button>
-                      )}
-                      {source !== undefined &&
-                        (source ? (
-                          <a
-                            className="project-link"
-                            href={source}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Source <FiArrowUpRight />
-                            <span className="sr-only">: {name}</span>
-                          </a>
-                        ) : (
-                          <button
-                            className="project-link"
-                            type="button"
-                            disabled
-                          >
-                            Source <FiArrowUpRight />
-                            <span className="sr-only">
-                              : {name} (unavailable)
-                            </span>
-                          </button>
-                        ))}
-                    </>
                   )}
+                  {href && (
+                    <a
+                      className="project-link"
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {sources?.length ? "Live website" : "Visit website"}{" "}
+                      <FiArrowUpRight />
+                      <span className="sr-only">: {name}</span>
+                    </a>
+                  )}
+                  {sources?.map(({ label, href: sourceHref }) => (
+                    <a
+                      className="project-link"
+                      href={sourceHref}
+                      key={sourceHref}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {label} <FiArrowUpRight />
+                      <span className="sr-only">: {name}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </article>
