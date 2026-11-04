@@ -6,7 +6,7 @@ export default function Education() {
       <h2>Education</h2>
       <div className="work">
         <div className="job">
-          <h3>Software Applications Technician | IEK Delta 360</h3>
+          <h3>Software Applications Technician | IEK Intergraphics</h3>
           <span className="date">October 2024 - June 2026</span>
           <p>
             Focused on software development fundamentals, including programming, web development, databases, and practical software development.
