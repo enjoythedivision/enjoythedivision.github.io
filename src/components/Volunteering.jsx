@@ -19,13 +19,9 @@ export default function Volunteering() {
           <span className="badges">
             <span className="badge">JavaScript</span>
             <span className="badge">React</span>
-            <span className="badge">HTML</span>
-            <span className="badge">CSS / SCSS</span>
             <span className="badge">REST APIs</span>
             <span className="badge">Git</span>
             <span className="badge">GitHub</span>
-            <span className="badge">Trello</span>
-            <span className="badge">Swagger</span>
             <span className="badge">CI/CD</span>
           </span>
         </div>
